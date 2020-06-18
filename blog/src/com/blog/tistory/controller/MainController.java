@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.blog.tistory.action.Action;
-import com.blog.tistory.action.MainHomeAction;
+import com.blog.tistory.action.main.MainHomeAction;
 
 
 @WebServlet("/main")

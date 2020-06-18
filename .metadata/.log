@@ -829,3 +829,63 @@ org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementExc
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 18:07:57.759
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pNjrrPcd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:48.353
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:48.356
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6757ed9e[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:48.358
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.141
+!MESSAGE Boot LS startup time from start to initialized: 1779ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.187
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.xeBWdKWaisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.190
+!MESSAGE subscribing to classpath changes: sts4.classpath.xeBWdKWa isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.191
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.193
+!MESSAGE subsribers = {sts4.classpath.xeBWdKWa=Send Classpath Notifications(6836)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.194
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.196
+!MESSAGE project blog ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.198
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.199
+!MESSAGE Preparing classpath changed notification blog
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.200
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.201
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.202
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.203
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.205
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.xeBWdKWa => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.208
+!MESSAGE buffering callback sts4.classpath.xeBWdKWa blog false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.210
+!MESSAGE executing callback sts4.classpath.xeBWdKWa 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 20:00:50.246
+!MESSAGE executing callback sts4.classpath.xeBWdKWa SUCCESS [done]
