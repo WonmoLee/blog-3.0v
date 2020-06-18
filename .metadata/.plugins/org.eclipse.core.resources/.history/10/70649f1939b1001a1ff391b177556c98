@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.blog.tistory.action.Action;
-import com.blog.tistory.action.MainHomeAction;
+import com.blog.tistory.action.MainAction;
 
 
 @WebServlet("/main")
@@ -40,8 +40,8 @@ public class MainController extends HttpServlet {
 	}
 		
 		private Action router(String cmd) {
-			if (cmd.equals("home")) {
-				return new MainHomeAction();
+			if (cmd.equals("main")) {
+				return new MainAction();
 			}
 			
 			return null;
