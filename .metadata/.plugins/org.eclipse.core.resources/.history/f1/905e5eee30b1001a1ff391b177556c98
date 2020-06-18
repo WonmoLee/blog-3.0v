@@ -1,0 +1,10 @@
+<%@page import="org.junit.Test"%>
+<%@page import="com.blog.tistory.db.DBConn"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	@Test
+	//DB연결 테스트
+	Connection conn = DBConn.getConnection();
+%>
