@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.blog.tistory.action.Action;
 import com.blog.tistory.action.user.UserLoginAction;
 import com.blog.tistory.action.user.UserSignupAction;
+import com.blog.tistory.action.user.UserSignupProcAction;
 
 
 @WebServlet("/user")
@@ -48,7 +49,9 @@ public class UsersController extends HttpServlet {
 				return new UserLoginAction();
 			} else if (cmd.equals("signup")) {
 				return new UserSignupAction();
-			}
+			} else if (cmd.equals("signuProc")) {
+				return new UserSignupProcAction();
+			} 
 			return null;
 		}
 	}

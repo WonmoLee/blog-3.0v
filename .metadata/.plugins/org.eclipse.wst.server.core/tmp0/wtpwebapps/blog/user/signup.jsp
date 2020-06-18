@@ -9,7 +9,7 @@
   	<img alt="tistory Logo2" src="static/img/tistoryLogo2.png" style="width: 400px; height: 200px;">
   </div>
 
-	<form action="/blog/user?cmd=joinProc" method="post" class="was-validated" onsubmit="return validate()">
+	<form action="/blog/user?cmd=signupProc" method="post" class="was-validated" onsubmit="return validate()">
   
   <div class="form-group">
     <label for="username">아이디</label>
@@ -35,9 +35,8 @@
   
   <div class="form-group">
     <label for="address">주소</label>
-    <!-- float-right는 인라인블록이여야지 가능하다. -->
     <button type="button" class="btn btn-secondary float-right" onclick="goPopup()">주소검색</button>
-    <input type="text" class="form-control" id="address" placeholder="예) 서울특별시 서대문구 홍은동 xx아파트 xxx동 xxx호" name="address" required readonly>
+    <input type="text" class="form-control" id="address" placeholder="예) 해돋이로 30번길 1-2" name="address" required readonly>
     <div class="valid-feedback">유효함.</div>
     <div class="invalid-feedback">Please fill out this field.</div>
   </div>
