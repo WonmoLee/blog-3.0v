@@ -12,7 +12,9 @@
 </head>
 <body>
 	<div>
-		<img alt="main img" src="static/img/mainImg.png" style="width: 120em;">
+		<img alt="main img" src="static/img/mainImg.png" style="width: 120em; margin-top: 20px;">
 	</div>
 </body>
+
+<%@ include file="include/footer.jsp" %>
 </html>
