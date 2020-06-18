@@ -1,0 +1,12 @@
+package com.blog.tistory.repository;
+
+public class UsersRepository {
+	
+	private static final String TAG = "UsersRepository : ";
+	
+	private static UsersRepository instance = new UsersRepository();
+	private UsersRepository() {}
+	public static UsersRepository getInstance() {
+		return instance;
+	}
+}

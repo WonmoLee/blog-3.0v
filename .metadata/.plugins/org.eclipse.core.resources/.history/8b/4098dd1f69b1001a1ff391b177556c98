@@ -1,0 +1,14 @@
+package com.blog.tistory.model;
+
+import java.sql.Timestamp;
+
+public class Users {
+	private int id;
+	private String userName;
+	private String password;
+	private String email;
+	private String address;
+	private String userProfile;
+	private String userRole;
+	private Timestamp createDate;
+}

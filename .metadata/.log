@@ -1000,3 +1000,21 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:09:43.608
 !MESSAGE executing callback sts4.classpath.ofOZHZYM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:40:03.504
+!MESSAGE Preparing classpath changed notification blog
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:40:03.506
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:40:03.508
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:40:03.513
+!MESSAGE buffering callback sts4.classpath.ofOZHZYM blog false 54
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:40:03.514
+!MESSAGE executing callback sts4.classpath.ofOZHZYM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-18 22:40:03.525
+!MESSAGE executing callback sts4.classpath.ofOZHZYM SUCCESS [done]

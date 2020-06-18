@@ -23,13 +23,11 @@ function validate() {
 //DB에 Ajax요청을 해서 중복 유저네임이 있는지확인
 //있으면 1을 리턴, 없으면 0을 리턴, 오류가 나면 -1을 리턴
 function usernameCheck() {
-	//성공 (ajax)
 	var tfUsername = $('#username').val();
-	//alert(tfUsername);
 	console.log(tfUsername);
 	$.ajax({
 		type: 'get',
-		url: `/blog/user?cmd=usernameCheck&username=${tfUsername}`
+		url: `/blog/user?cmd=userNameCheck&userName=${tfUsername}`
 		
 	}).done(function(result){    // =>는 this를 바인딩해준다.
 		console.log(result);

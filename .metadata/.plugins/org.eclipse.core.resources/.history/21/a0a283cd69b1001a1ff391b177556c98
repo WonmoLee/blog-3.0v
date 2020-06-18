@@ -1,0 +1,5 @@
+package com.blog.tistory.repository;
+
+public class UsersRepository {
+
+}
