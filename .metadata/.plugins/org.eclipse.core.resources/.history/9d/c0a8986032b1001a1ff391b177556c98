@@ -1,0 +1,5 @@
+package com.blog.tistory.action;
+
+public interface Action {
+
+}
