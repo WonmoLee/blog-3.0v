@@ -11,5 +11,8 @@
 <link rel="stylesheet" href="/blog/static/css/style.css" />
 </head>
 <body>
+	<div>
+		<img alt="main img" src="static/img/mainImg.png" style="width: 120em;">
+	</div>
 </body>
 </html>

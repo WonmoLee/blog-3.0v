@@ -27,14 +27,20 @@
 			<li class="nav-item"><a class="nav-link" href="#">스킨</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">포럼</a></li>
 		</ul>
+		
+		<ul class="navbar-nav">
+			<li class="nav-item"><img alt="img1" src="static/img/img1.png"></li>
+			<li class="nav-item"><a class="nav-link" href="/blog/notice?cmd=ntAll">[안내] 오늘의 공지사항</a></li>
+		</ul>
+		
 		<ul class="navbar-nav">
      		<c:choose>
 					<c:when test="${empty sessionScope.principal}">
 						<li class="nav-item"><a class="nav-link" href="/blog/user?cmd=login">로그인</a></li>
-						<li class="nav-item"><a class="nav-link" href="/blog/user?cmd=signup">회원가입</a></li>
+						<li class="nav-item"><button type="button" class="btn btn-warning" onclick="location.href='signup.jsp'">회원가입</button></li>
 					</c:when>
 					<c:otherwise>
-						<li><button type="button" class="btn btn-warning">글쓰기</button></li>
+						<li><button type="button" class="btn btn-warning" onclick="location.href='write.jsp'">글쓰기</button></li>
 						<li class="nav-item"><a class="nav-link" href="/blog/user?cmd=update">회원정보</a></li>
 						<li class="nav-item"><a class="nav-link" href="/blog/user?cmd=logout">로그아웃</a></li>
 						<li class="nav-item">
@@ -47,6 +53,5 @@
      	</ul>
      </div>
 	</nav>
-	<hr/>
 </body>
 </html>
