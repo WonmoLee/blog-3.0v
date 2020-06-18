@@ -1,0 +1,5 @@
+package com.blog.tistory.action.user;
+
+public class UserSignupAction {
+
+}

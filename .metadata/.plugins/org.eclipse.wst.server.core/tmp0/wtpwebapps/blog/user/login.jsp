@@ -8,20 +8,22 @@
 
 <div class="container">
 
-  <div align="center"><img alt="tistory Logo2" src="static/img/tistoryLogo2.png" style="width: 400px; height: 200px;"></div>
+  <div align="center">
+  	<img alt="tistory Logo2" src="static/img/tistoryLogo2.png" style="width: 400px; height: 200px;">
+  </div>
 
   <form action="/blog/user?cmd=loginProc" method="POST" class="was-validated">
     
     <div class="form-group">
       <label for="uname">아이디</label>
-      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <input type="text" class="form-control" id="uname" placeholder="아이디를 입력해주세요." name="uname" required>
       <div class="valid-feedback">유효함.</div>
       <div class="invalid-feedback">정보를 입력해주세요.</div>
     </div>
     
     <div class="form-group">
       <label for="pwd">패스워드</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <input type="password" class="form-control" id="pwd" placeholder="패스워드를 입력해주세요." name="pswd" required>
       <div class="valid-feedback">유효함.</div>
       <div class="invalid-feedback">정보를 입력해주세요.</div>
     </div>

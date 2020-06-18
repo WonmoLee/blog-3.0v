@@ -37,7 +37,7 @@
      		<c:choose>
 					<c:when test="${empty sessionScope.principal}">
 						<li class="nav-item"><a class="nav-link" href="/blog/user?cmd=login">로그인</a></li>
-						<li class="nav-item"><button type="button" class="btn btn-warning" onclick="location.href='signup.jsp'">회원가입</button></li>
+						<li class="nav-item"><button type="button" class="btn btn-warning" onclick="location.href='user?cmd=signup'">회원가입</button></li>
 					</c:when>
 					<c:otherwise>
 						<li><button type="button" class="btn btn-warning" onclick="location.href='write.jsp'">글쓰기</button></li>

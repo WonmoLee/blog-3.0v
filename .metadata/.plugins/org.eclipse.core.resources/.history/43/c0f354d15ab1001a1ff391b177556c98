@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+
+<%@ include file="../include/nav.jsp" %>
+
+
+
+<div class="container">
+
+  <div align="center"><img alt="tistory Logo2" src="static/img/tistoryLogo2.png" style="width: 400px; height: 200px;"></div>
+
+  <form action="http://192.168.0.70/myapp/idcard.html">
+    <div class="center">
+    <fieldset style="width: 300px; height: 300px; margin-top: 8em; border-color: purple;">
+        <legend style="text-align: center; font-weight: 900; font-size: 1.3em;">로그인</legend>
+        <pre>
+        <label><p style="font-size: 1.5em; font-weight: 800;">아이디 입력<br><input type="text" style="width: 300px; height: 20px;" placeholder="ID" name="id" required></p></label>
+        <label><p style="font-size: 1.5em; font-weight: 800;">패스워드 입력<br><input type="password" style="width: 300px; height: 20px;" placeholder="PASSWORD" name="pwd" required></p></label></pre>
+        <input type="submit" style="height: 30px;" value="로그인" onclick="check()">
+    </fieldset></div>
+    </form>
+</div>
+
+<%@ include file="../include/footer.jsp" %>
