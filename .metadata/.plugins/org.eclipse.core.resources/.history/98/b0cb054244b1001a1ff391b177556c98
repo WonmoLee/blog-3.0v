@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tistory</title>
+<link rel="stylesheet" href="/blog/static/css/style.css" />
+</head>
+<body>
+<header>
+	<h1 style="text-align: left;"><img style="width: 90px; height: 60px;" alt="tistory logo" src="static/img/tistoryLogo.png" align="middle">티스토리에 오신것을 환영합니다.</h1>
+</header>
+<hr/>
+</body>
+</html>

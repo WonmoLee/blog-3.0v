@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tistory</title>
+<link href="/blog/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="/blog/index.jsp"> 
+			<img src="/static/img/tistoryLogo.png" alt="Logo"style="width: 40px;">
+		</a>
+	</nav>
+</body>
+</html>
