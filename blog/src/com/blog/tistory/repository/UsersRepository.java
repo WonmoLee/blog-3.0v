@@ -5,6 +5,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import com.blog.tistory.db.DBConn;
+import com.blog.tistory.model.RoleType;
+import com.blog.tistory.model.Users;
+
+import sun.security.pkcs11.Secmod.DbMode;
 
 
 public class UsersRepository {
@@ -41,5 +45,40 @@ public class UsersRepository {
 		}
 		
 		return -1;
+	}
+	
+	public Users fineByUsernameAndPassword(String username, String password) {
+		final String SQL = "SELECT ID, USERNAME, EMAIL, ADDRESS, USERPROFILE, USERROLE, CREATEDATE FROM USERS WHERE ID = ? PASSWORD = ?";
+		Users user = null;
+		
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			
+			pstmt.setString(1, username);
+			pstmt.setString(2, password);
+			
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				user = new Users();
+				
+				user.setId(rs.getInt("id"));
+				user.setUserName(rs.getString("username"));
+				user.setEmail(rs.getString("email"));
+				user.setAddress(rs.getString("address"));
+				user.setUserProfile(rs.getString("userProfile"));
+				user.setUserRole(RoleType.valueOf(rs.getString("userRole")));
+				user.setCreateDate(rs.getTimestamp("createDate"));
+			}
+			return user;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG + "findByUsernameAndPassword : " + e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt, rs);
+		}
+		
+		return null;
 	}
 }

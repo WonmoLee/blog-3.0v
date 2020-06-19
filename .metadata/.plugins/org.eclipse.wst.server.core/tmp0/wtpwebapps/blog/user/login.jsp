@@ -16,21 +16,21 @@
     
     <div class="form-group">
       <label for="uname">아이디</label>
-      <input type="text" class="form-control" id="uname" placeholder="아이디를 입력해주세요." name="uname" required>
+      <input type="text" class="form-control" id="username" placeholder="아이디를 입력해주세요." name="userName" required>
       <div class="valid-feedback">유효함.</div>
       <div class="invalid-feedback">정보를 입력해주세요.</div>
     </div>
     
     <div class="form-group">
       <label for="pwd">패스워드</label>
-      <input type="password" class="form-control" id="pwd" placeholder="패스워드를 입력해주세요." name="pswd" required>
+      <input type="password" class="form-control" id="password" placeholder="패스워드를 입력해주세요." name="passWord" required>
       <div class="valid-feedback">유효함.</div>
       <div class="invalid-feedback">정보를 입력해주세요.</div>
     </div>
     
     <div class="form-group form-check">
       <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember" required> 아이디 기억하기
+        <input class="form-check-input" type="checkbox" name="remember"> 아이디 기억하기
       </label>
     </div>
     
