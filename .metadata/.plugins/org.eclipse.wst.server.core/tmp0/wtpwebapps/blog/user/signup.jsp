@@ -14,14 +14,14 @@
   <div class="form-group">
     <label for="username">아이디</label>
     <button type="button" class="btn btn-secondary float-right" onclick="usernameCheck()">중복확인</button>
-    <input type="text" class="form-control" id="username" placeholder="아이디를 입력해주세요." name="username" required>
+    <input type="text" class="form-control" id="username" placeholder="아이디를 입력해주세요." name="userName" required>
     <div class="valid-feedback">유효함.</div>
     <div class="invalid-feedback">정보를 입력해주세요.</div>
   </div>
   
   <div class="form-group">
     <label for="password">패스워드</label>
-    <input type="password" class="form-control" id="password" placeholder="패스워드를 입력해주세요." name="password" required>
+    <input type="password" class="form-control" id="password" placeholder="패스워드를 입력해주세요." name="passWord" required>
     <div class="valid-feedback">유효함.</div>
     <div class="invalid-feedback">정보를 입력해주세요.</div>
   </div>

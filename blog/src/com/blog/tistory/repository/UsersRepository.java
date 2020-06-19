@@ -8,7 +8,6 @@ import com.blog.tistory.db.DBConn;
 import com.blog.tistory.model.RoleType;
 import com.blog.tistory.model.Users;
 
-import sun.security.pkcs11.Secmod.DbMode;
 
 
 public class UsersRepository {
@@ -48,7 +47,7 @@ public class UsersRepository {
 	}
 	
 	public Users fineByUsernameAndPassword(String username, String password) {
-		final String SQL = "SELECT ID, USERNAME, EMAIL, ADDRESS, USERPROFILE, USERROLE, CREATEDATE FROM USERS WHERE ID = ? PASSWORD = ?";
+		final String SQL = "SELECT ID, USERNAME, EMAIL, ADDRESS, USERPROFILE, USERROLE, CREATEDATE FROM USERS WHERE USERNAME = ? AND PASSWORD = ?";
 		Users user = null;
 		
 		try {
@@ -80,5 +79,30 @@ public class UsersRepository {
 		}
 		
 		return null;
+	}
+	
+	public int save(Users user) {
+		final String SQL = "INSERT INTO USERS(ID, USERNAME, PASSWORD, EMAIL, ADDRESS, USERROLE, CREATEDATE) VALUES(USERS_SEQ.NEXTVAL, ? ,?, ?, ?, ?, SYSDATE)";
+		
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			
+			pstmt.setString(1, user.getUserName());
+			pstmt.setString(2, user.getPassword());
+			pstmt.setString(3, user.getEmail());
+			pstmt.setString(4, user.getAddress());
+			pstmt.setString(5, user.getUserRole().toString());
+			
+			return pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG + "save : " + e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+		
+		return -1;
 	}
 }

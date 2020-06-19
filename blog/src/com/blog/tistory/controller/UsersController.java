@@ -51,7 +51,7 @@ public class UsersController extends HttpServlet {
 				return new UserLoginAction();
 			} else if (cmd.equals("signup")) {
 				return new UserSignupAction();
-			} else if (cmd.equals("signuProc")) {
+			} else if (cmd.equals("signupProc")) {
 				return new UserSignupProcAction();
 			} else if (cmd.equals("userNameCheck")) {
 				return new UserNameCheckAction();

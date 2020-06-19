@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="sun.java2d.pipe.hw.AccelDeviceEventListener"/>
+<fullyQualifiedTypeName name="com.blog.tistory.action.Action"/>
+<fullyQualifiedTypeName name="com.blog.tistory.action.user.UserLoginProcAction"/>
+<fullyQualifiedTypeName name="sun.security.pkcs11.Secmod.DbMode"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.blog.tistory.model.Users"/>
+<fullyQualifiedTypeName name="com.blog.tistory.repository.UsersRepository"/>
+<fullyQualifiedTypeName name="com.blog.tistory.db.DBConn"/>
+<fullyQualifiedTypeName name="com.blog.tistory.util.Script"/>
+<fullyQualifiedTypeName name="com.blog.tistory.model.RoleType"/>
+</qualifiedTypeNameHistroy>
